@@ -1,6 +1,19 @@
 /* #Base Setup
 ================================================== */
 
+// wrapper
+
+.container {
+
+  padding: 0 15px;
+
+  @media (min-width: 600px) {
+    max-width: 34em;
+    margin: 0 auto;
+  }
+}
+
+
 .row {
 
   margin: 0 auto;
@@ -123,4 +136,3 @@ img.scale-with-grid {
   width: 0;
   height: 0;
 }
-

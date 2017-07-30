@@ -1,19 +1,10 @@
 // footer
 
 .site-footer {
+  margin-top: 4em;
   padding-bottom: 1em;
-  height: 40px;
-  opacity: 0;
+  height: 2em;
   transition: all .4s cubic-bezier(.02,.83,.49,1);
-
-  &.to-animate {
-    transform: translateY(30px);
-  }
-
-  &.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   &__link {
     color: rgb(194,194,201);

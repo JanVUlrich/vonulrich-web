@@ -11,15 +11,76 @@
   margin: 0;
   }
 
+.no-list-style {
+  @include no-list-style;
+}
+
 @mixin section-with-margin {
   margin-bottom: 2em;
+}
+
+@mixin hidden-from-sm {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+@mixin hidden-from-xs {
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.hidden-from-sm {
+  @include hidden-from-sm;
+}
+
+.hidden-from-xs {
+  @include hidden-from-xs;
+}
+
+
+@mixin visible-from-sm {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+@mixin visible-from-xs {
+  @media (max-width: 479px) {
+    display: none !important;
+  }
+}
+
+.visible-from-sm {
+  @include visible-from-sm;
+}
+
+.visible-from-xs {
+  @include visible-from-xs;
+}
+
+
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 479px) {
+
+  .hide-for-large {
+    display: none;
   }
 
-@mixin visible-sm {
-  @media all and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 960px) {
+
+  .hide-for-small {
     display: none;
-    }
   }
+
+}
 
 @mixin transition($transition...) {
   -moz-transition:    $transition;
@@ -77,30 +138,4 @@
   -moz-transform-origin: $val;
   -ms-transform-origin: $val;
   transform-origin: $val;
-  }
-
-
-/*
-*
-* Function returns integer from unit
-*
-*/
-
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
-  }
-
-
-/*
-*
-* Helper function to determine if backgroundcolor rewuired light or dark text
-*
-*/
-
-@function set-textcolor($color) {
-    @if (lightness($color) > 50) {
-      @return '#000'; // Lighter background, return dark color
-    } @else {
-      @return '#fff'; // Darker background, return light color
-    }
   }

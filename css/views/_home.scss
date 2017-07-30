@@ -4,181 +4,97 @@
 .intro {
   margin-bottom: 30px;
   position: relative;
-  margin-top: 8em;
 
-  @media (max-width: 600px) {
+  @media (max-width: 599px) {
+    margin-top: 4em;
+  }
+
+  @media (min-width: 600px) {
     margin-top: 8em;
   }
 
-  &__greeting {
-    font-size: 3em;
+  &__greeting,
+  &__headline {
     font-weight: bold;
-    letter-spacing: -1px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
     line-height: 1.2;
     margin-bottom: 30px;
-  }
+    color: $font-color-accent;
+    display: inline;
 
-  &__headline {
-    color: rgb(182,35,42);
-  }
+    @media (max-width: 599px) {
+      font-size: 1.5rem;
+    }
 
-  &__head {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  left: -200px;
-  top: -20px;
-  opacity: 0;
-  transform: translateX(-400px);
-  transition: all .4s cubic-bezier(.1,1.61,.64,.87);
-
-  @media (max-width: 850px) {
-    display: none;
-  }
-
-    &.is-visible {
-      transform: translateX(0px);
-      opacity: 1;
+    @media (min-width: 600px) {
+      font-size: 2.4rem;
     }
   }
 }
 
-// words & letters
 
-.about {
+.h-section {
+  font-size: 1rem;
+  color: $font-color-accent;
+  font-weight: bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+}
 
-  &-xp {
-    margin-bottom: 30px;
-    opacity: 0;
-    transition: all .4s cubic-bezier(.02,.83,.49,1);
+.vita {
+  &__item {
 
-    &.to-animate {
-      opacity: 0;
-      transform: translateY(30px);
-    }
+  }
+  &__timespan {
+    margin: 0;
+    color: $font-color-accent;
+  }
+  &__content {
 
-    &.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  }
+}
+
+.text__a {
+  text-decoration: none;
+  line-height: 1;
+  padding-bottom: 2px;
+  color: $font-color-accent;
+  display: inline-block;
+  position: relative;
+  transition: color .15s;
+  z-index: 10;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $font-color-accent;
+    transition: height .15s;
   }
 
-  // clients
+  &:hover {
+    color: white;
 
-  &-levels {
-    margin-bottom: 30px;
-    opacity: 0;
-    transition: all .4s cubic-bezier(.02,.83,.49,1);
-
-    &.to-animate {
-      transform: translateY(30px);
-    }
-
-    &.is-visible {
-      opacity: 1;
-      transform: translateY(0);
+    &:after {
+      height: 1em;
     }
   }
+}
 
-  // doing now
-
-  &-current {
-    margin-bottom: 30px;
-    opacity: 0;
-    transition: all .4s cubic-bezier(.02,.83,.49,1);
-
-    &.to-animate {
-      transform: translateY(30px);
-    }
-
-    &.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  // portfolio
-
-  &-portfolio {
-    margin-bottom: 30px;
-    opacity: 0;
-    transition: all .4s cubic-bezier(.02,.83,.49,1);
-
-    &.to-animate {
-      transform: translateY(30px);
-    }
-
-    &.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  // contact
-
-  &-contact {
-    margin-bottom: 70px;
-    opacity: 0;
-    transition: all .4s cubic-bezier(.02,.83,.49,1);
-
-    &.to-animate {
-      transform: translateY(30px);
-    }
-
-    &.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    &__link {
-      text-decoration: none;
-      color: rgb(182,35,42);
-      border: none;
-      white-space: nowrap;
-      margin-bottom: 10px;
-      display: inline-block;
-      border-bottom: 1px solid transparent;
-      line-height: 1.1;
-      position: relative;
-
-      &:hover,
-      &:focus,
-      &:hover:visited {
-        text-decoration: none;
-        color: rgb(182,35,42);
-      }
-
-      &:hover {
-        .about-contact__linkicon {
-          transform: scale(1);
-          opacity: 1;
-
-          svg path {
-            fill: rgb(182,35,42);
-          }
-        }
-
-        .about-contact__linktext {
-          left: 25px;
-        }
-      }
-    }
-
-    &__linkicon {
-      display: block;
-      line-height: 0;
-      transform: scale(0);
-      position: absolute;
-      top: 0.2em;
-      left: 0;
-      opacity: 0;
-      transition: transform .2s ease, opacity .2s ease;
-    }
-
-    &__linktext {
-      position: relative;
-      left: 0;
-      transition: left .2s ease;
-    }
-  }
+.site-logo-title {
+  margin-top: 1rem;
+  padding-left: 4em;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  background: transparent url('../img/me-head.svg') no-repeat center left;
+  background-size: contain;
+  color: $font-color-accent;
+  line-height: 1.2;
 }
