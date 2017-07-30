@@ -1,0 +1,126 @@
+/* #Base Setup
+================================================== */
+
+.row {
+
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: 479px) {
+    width: auto;
+    /*left and right margins for portrait iphone 5*/
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__col {
+
+    @media (max-width: 767px) {
+      width: auto;
+      float: none;
+      display: block;
+    }
+
+    @media (min-width: 480px) {
+      padding: 0 20px;
+    }
+
+    @media (min-width: 768px) {
+      float: left;
+      display: inline;
+
+      &--one {
+        width: 25%;
+      }
+
+      &--two {
+        width: 50%;
+      }
+
+      &--three {
+        width: 75%;
+      }
+
+      &--four {
+        width: 100%;
+      }
+
+      &.offset-by-one {
+        margin-left: 25%;
+      }
+      &.offset-by-two {
+        margin-left: 50%;
+      }
+      &.offset-by-three {
+        margin-left: 75%;
+      }
+    }
+  }
+}
+
+
+
+/* Helper Classes
+================================================== */
+
+img.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 479px) {
+
+  .hide-for-large {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  .hide-for-small {
+    display: none;
+  }
+
+}
+
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+

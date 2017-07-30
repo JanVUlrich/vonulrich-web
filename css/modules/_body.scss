@@ -1,0 +1,119 @@
+/* ===============================================
+  Typography
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+p {
+  margin: 0 0 0.75em 0;}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+ul, ol {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none outside;
+  }
+
+ol {
+  list-style: decimal;
+  }
+
+ul ul, ul ol, ol ol, ol ul {
+  margin: 4px 0 5px 30px;
+}
+
+ul ul li, ul ol li,
+ol ol li, ol ul li {
+  margin-bottom: 0.5em
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.a,
+.a:hover,
+.a:focus,
+.a:hover:visited {
+  text-decoration: none;
+  color: rgb(182,35,42);
+  border-bottom: 1px solid rgb(182,35,42);
+}
+
+.a:visited {
+  color: #A9A9B3;
+  outline: 0;
+  border-bottom: 1px solid #A9A9B3;
+}
+
+
+
+/* ===============================================
+  teh page
+================================================== */
+
+
+body {
+  font-family: "jaf-facitweb", Helvetica, sans-serif;
+  color: rgb(83,83,104);
+  padding-top: 2em;
+  line-height: 1.7;
+  background-color: #fbfafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 40px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1099px) {
+    font-size: 115%;
+  }
+  @media only screen and (min-width: 1100px) {
+    font-size: 125%;
+  }
+}
+
+// dat neat read line up top
+
+body:before {
+  z-index: 100;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 8px solid rgb(182,35,42);
+}
+
+// wrapper
+
+.container-left {
+
+  @media (min-width: 600px) {
+    max-width: 34em;
+    margin-left: 10%;
+  }
+
+  @media (min-width: 840px) {
+    margin-left: 30%;
+  }
+}
+

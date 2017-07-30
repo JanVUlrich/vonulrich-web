@@ -1,0 +1,17 @@
+// Imprint
+
+.container-imprint {
+  max-width: 54em;
+  @extend .container;
+
+  @media (min-width: 850px) {
+    margin: 0 10%;
+  }
+}
+
+.imprint {
+  margin-top: 3em;
+
+  &__aside {}
+  &__text {}
+}

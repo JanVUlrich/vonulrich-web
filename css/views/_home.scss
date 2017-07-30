@@ -1,0 +1,184 @@
+
+// intro
+
+.intro {
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: 8em;
+
+  @media (max-width: 600px) {
+    margin-top: 8em;
+  }
+
+  &__greeting {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__headline {
+    color: rgb(182,35,42);
+  }
+
+  &__head {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  left: -200px;
+  top: -20px;
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: all .4s cubic-bezier(.1,1.61,.64,.87);
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+
+    &.is-visible {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}
+
+// words & letters
+
+.about {
+
+  &-xp {
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all .4s cubic-bezier(.02,.83,.49,1);
+
+    &.to-animate {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // clients
+
+  &-levels {
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all .4s cubic-bezier(.02,.83,.49,1);
+
+    &.to-animate {
+      transform: translateY(30px);
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // doing now
+
+  &-current {
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all .4s cubic-bezier(.02,.83,.49,1);
+
+    &.to-animate {
+      transform: translateY(30px);
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // portfolio
+
+  &-portfolio {
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all .4s cubic-bezier(.02,.83,.49,1);
+
+    &.to-animate {
+      transform: translateY(30px);
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // contact
+
+  &-contact {
+    margin-bottom: 70px;
+    opacity: 0;
+    transition: all .4s cubic-bezier(.02,.83,.49,1);
+
+    &.to-animate {
+      transform: translateY(30px);
+    }
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &__link {
+      text-decoration: none;
+      color: rgb(182,35,42);
+      border: none;
+      white-space: nowrap;
+      margin-bottom: 10px;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      line-height: 1.1;
+      position: relative;
+
+      &:hover,
+      &:focus,
+      &:hover:visited {
+        text-decoration: none;
+        color: rgb(182,35,42);
+      }
+
+      &:hover {
+        .about-contact__linkicon {
+          transform: scale(1);
+          opacity: 1;
+
+          svg path {
+            fill: rgb(182,35,42);
+          }
+        }
+
+        .about-contact__linktext {
+          left: 25px;
+        }
+      }
+    }
+
+    &__linkicon {
+      display: block;
+      line-height: 0;
+      transform: scale(0);
+      position: absolute;
+      top: 0.2em;
+      left: 0;
+      opacity: 0;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+
+    &__linktext {
+      position: relative;
+      left: 0;
+      transition: left .2s ease;
+    }
+  }
+}
