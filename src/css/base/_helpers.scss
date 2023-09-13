@@ -1,15 +1,8 @@
-/*********************************************************************
- *
- * Various mixins to aid with display
- *
- *********************************************************************/
-
-
 @mixin no-list-style {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  }
+}
 
 .no-list-style {
   @include no-list-style;
@@ -39,7 +32,6 @@
   @include hidden-from-xs;
 }
 
-
 @mixin visible-from-sm {
   @media (max-width: 767px) {
     display: none !important;
@@ -60,64 +52,57 @@
   @include visible-from-xs;
 }
 
-
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
 }
 
 @media only screen and (max-width: 479px) {
-
   .hide-for-large {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 960px) {
-
   .hide-for-small {
     display: none;
   }
-
 }
 
 @mixin transition($transition...) {
-  -moz-transition:    $transition;
-  -o-transition:      $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
   -webkit-transition: $transition;
-  transition:         $transition;
-  }
+  transition: $transition;
+}
 
 @mixin transition-property($property...) {
-  -moz-transition-property:    $property;
-  -o-transition-property:      $property;
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
   -webkit-transition-property: $property;
-  transition-property:         $property;
-  }
+  transition-property: $property;
+}
 
 @mixin transition-duration($duration...) {
-  -moz-transition-duration:    $duration;
-  -o-transition-duration:      $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
   -webkit-transition-duration: $duration;
-  transition-duration:         $duration;
-  }
+  transition-duration: $duration;
+}
 
 @mixin transition-timing-function($timing...) {
-  -moz-transition-timing-function:    $timing;
-  -o-transition-timing-function:      $timing;
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
   -webkit-transition-timing-function: $timing;
-  transition-timing-function:         $timing;
-  }
+  transition-timing-function: $timing;
+}
 
 @mixin transition-delay($delay...) {
-  -moz-transition-delay:    $delay;
-  -o-transition-delay:      $delay;
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
   -webkit-transition-delay: $delay;
-  transition-delay:         $delay;
-  }
-
-
+  transition-delay: $delay;
+}
 
 @mixin transform-style($val...) {
   -webkit-transform-style: $val;
@@ -131,11 +116,19 @@ img.scale-with-grid {
   -moz-transform: $val;
   -ms-transform: $val;
   transform: $val;
-  }
+}
 
 @mixin transform-origin($val...) {
   -webkit-transform-origin: $val;
   -moz-transform-origin: $val;
   -ms-transform-origin: $val;
   transform-origin: $val;
+}
+
+.p {
+  &x {
+    &-1 {
+      padding: 0 1rem;
+    }
   }
+}

@@ -23,6 +23,19 @@
       "oAP" : "\/dist\/dist",
       "oF" : 0
     },
+    "\/src\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 8275,
+      "oA" : 0,
+      "oAP" : "\/dist\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/src\/css\/base\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -33,21 +46,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/base\/_base.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/src\/css\/base\/_flexbox.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/base\/_flexbox.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -218,25 +216,35 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/src\/css\/style.css" : {
-      "aP" : 1,
+    "\/src\/css\/modules\/_styling.scss" : {
+      "aP" : 0,
       "bl" : 0,
-      "ci" : 0,
       "co" : 0,
-      "ft" : 16,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/style-min.css",
+      "oAP" : "\/dist\/css\/modules\/_styling.css",
       "oF" : 0,
-      "pg" : 0
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
-    "\/src\/css\/style.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/src\/css\/modules\/_typography.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/style.css.map",
-      "oF" : 0
+      "oAP" : "\/dist\/css\/modules\/_typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/src\/css\/style.scss" : {
       "aP" : 0,
@@ -306,6 +314,29 @@
       "oAP" : "\/dist\/favicon.ico",
       "oF" : 0
     },
+    "\/src\/favicon.png" : {
+      "ft" : 32768,
+      "iS" : 1308,
+      "oA" : 0,
+      "oAP" : "\/dist\/favicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/favicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 3758088159,
+      "prP" : 0
+    },
     "\/src\/fonts\/inconsolata-bold.ttf" : {
       "cB" : 0,
       "ft" : 8192,
@@ -338,6 +369,32 @@
       "oAP" : "\/dist\/fonts\/inconsolata-regular.woff",
       "oF" : 0
     },
+    "\/src\/icon-192.png" : {
+      "ft" : 32768,
+      "iS" : 9010,
+      "oA" : 0,
+      "oAP" : "\/dist\/icon-192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/icon-512.png" : {
+      "ft" : 32768,
+      "iS" : 28034,
+      "oA" : 0,
+      "oAP" : "\/dist\/icon-512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/src\/img\/me-head.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -348,20 +405,44 @@
       "plM" : 3758088159,
       "prP" : 0
     },
-    "\/src\/imprint.html" : {
+    "\/src\/imprint.kit" : {
       "cB" : 0,
-      "ft" : 8192,
+      "ft" : 2048,
       "hM" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/dist\/imprint.html",
       "oF" : 0
     },
-    "\/src\/index.html" : {
+    "\/src\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/index.html",
+      "oF" : 0
+    },
+    "\/src\/manifest.webmanifest" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/dist\/index.html",
+      "oAP" : "\/dist\/manifest.webmanifest",
+      "oF" : 0
+    },
+    "\/src\/parts\/_footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_footer.html",
+      "oF" : 0
+    },
+    "\/src\/parts\/_head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_head.html",
       "oF" : 0
     },
     "\/src\/sitemap.xml" : {
@@ -383,8 +464,9 @@
     "creationDate" : 523099198,
     "displayValue" : "vu",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "meme-kahn",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "\/src\/apple-touch-icon.png",
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 716295698.60896599
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
