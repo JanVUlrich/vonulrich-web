@@ -1,5 +1,4 @@
 :root {
-
   @media only screen and (min-width: 768px) and (max-width: 1099px) {
     font-size: 115%;
   }
@@ -11,11 +10,10 @@
 
 body {
   font-family: "Inconsolata", Helvetica, sans-serif;
-  color: $font-color-base;
+  color: var(--vu-text-primary);
   padding-top: 2rem;
   line-height: 1.6;
-  background-color: #FCFBFA;
-  padding-bottom: 4rem;
+  background-color: var(--vu-bg-main);
   font-synthesis: none;
 }
 
@@ -28,5 +26,5 @@ body:before {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 8px solid $font-color-accent;
+  border-bottom: 8px solid var(--vu-text-accent);
 }

@@ -1,5 +1,15 @@
-
 // intro
+
+.site-logo-title {
+  margin-top: 1rem;
+  padding-left: 4em;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  background: transparent url('../img/me-head.svg') no-repeat center left;
+  background-size: contain;
+  color: var(--vu-text-accent);
+  line-height: 1.2;
+}
 
 .intro {
   margin-bottom: 30px;
@@ -16,11 +26,10 @@
   &__greeting,
   &__headline {
     font-weight: bold;
-    font-weight: 700;
     letter-spacing: -0.01em;
     line-height: 1.2;
     margin-bottom: 30px;
-    color: $font-color-accent;
+    color: var(--vu-text-accent);
     display: inline;
 
     @media (max-width: 599px) {
@@ -36,7 +45,7 @@
 
 .h-section {
   font-size: 1rem;
-  color: $font-color-accent;
+  color: var(--vu-text-accent);
   font-weight: bold;
   font-weight: 700;
   text-transform: uppercase;
@@ -45,23 +54,21 @@
 }
 
 .vita {
-  &__item {
+  &__item {}
 
-  }
   &__timespan {
     margin: 0;
     color: $font-color-accent;
   }
-  &__content {
 
-  }
+  &__content {}
 }
 
 .text__a {
   text-decoration: none;
   line-height: 1;
   padding-bottom: 2px;
-  color: $font-color-accent;
+  color: var(--vu-text-accent);
   display: inline-block;
   position: relative;
   transition: color .15s;
@@ -75,7 +82,7 @@
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: $font-color-accent;
+    background-color: var(--vu-text-accent);
     transition: height .15s;
   }
 
@@ -86,15 +93,4 @@
       height: 1em;
     }
   }
-}
-
-.site-logo-title {
-  margin-top: 1rem;
-  padding-left: 4em;
-  padding-top: .75em;
-  padding-bottom: .75em;
-  background: transparent url('../img/me-head.svg') no-repeat center left;
-  background-size: contain;
-  color: $font-color-accent;
-  line-height: 1.2;
 }

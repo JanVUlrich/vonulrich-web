@@ -1,0 +1,21 @@
+/*
+
+*/
+
+:root {
+    --vu-bg-main: #FCFBFA;
+    --vu-highlight: #316e3c;
+
+    --vu-text-primary: #4C3515;
+    --vu-text-accent: #316e3c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --vu-bg-main: #FCFBFA;
+        --vu-highlight: #316e3c;
+
+        --vu-text-primary: #4C3515;
+        --vu-text-accent: #316e3c;
+    }
+}
