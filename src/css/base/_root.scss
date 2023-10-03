@@ -1,0 +1,15 @@
+/*
+    Colors 
+*/
+
+:root {
+    --vu-bg-main: #{$color-bg-main};
+    --vu-highlight: #{$color-highlight};
+
+    --vu-text-primary: #{$color-text-primary};
+    --vu-text-accent: #{$color-text-accent};
+}
+
+// @media (prefers-color-scheme: dark) {
+// nothing here yet
+// }
