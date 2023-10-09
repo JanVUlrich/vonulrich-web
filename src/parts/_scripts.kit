@@ -1,0 +1,20 @@
+<script>
+    if (document.readyState !== 'loading') {
+        run();
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            run();
+        });
+
+    }
+
+    function run() {
+        const part1 = "mailto:"
+        const part2 = "%6A%61%6E%76%2E%75%6C%72%69%63%68%40%67%6D%61%69%6C%2E%63%6F%6D"
+
+        Array.from(document.querySelectorAll("[data-email]")).forEach(el => {
+            el.addEventListener("click", _ => { window.location.href = part1 + part2 })
+        })
+    }
+
+</script>

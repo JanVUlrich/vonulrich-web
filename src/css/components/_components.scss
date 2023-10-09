@@ -62,3 +62,11 @@ $breakpoint-sm: 600px;
         }
     }
 }
+
+a[data-email] {
+    cursor: pointer;
+}
+
+p.kontakt b {
+    display: none;
+}

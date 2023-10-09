@@ -32,6 +32,45 @@
     }
 }
 
+.no-list-style {
+    @include no-list-style;
+}
+
+.hidden-from-sm {
+    @include hidden-from-sm;
+}
+
+.hidden-from-xs {
+    @include hidden-from-xs;
+}
+
+.scale-with-grid {
+    max-width: 100%;
+    height: auto;
+}
+
+.visible-from-sm {
+    @include visible-from-sm;
+}
+
+.visible-from-xs {
+    @include visible-from-xs;
+}
+
+
+@media only screen and (max-width: 479px) {
+    .hide-for-large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .hide-for-small {
+        display: none;
+    }
+}
+
+
 @mixin baseStyles {
     .c {
         &-accent {
@@ -252,42 +291,3 @@
 }
 
 @include baseStyles;
-
-
-.no-list-style {
-    @include no-list-style;
-}
-
-.hidden-from-sm {
-    @include hidden-from-sm;
-}
-
-.hidden-from-xs {
-    @include hidden-from-xs;
-}
-
-.scale-with-grid {
-    max-width: 100%;
-    height: auto;
-}
-
-.visible-from-sm {
-    @include visible-from-sm;
-}
-
-.visible-from-xs {
-    @include visible-from-xs;
-}
-
-
-@media only screen and (max-width: 479px) {
-    .hide-for-large {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 960px) {
-    .hide-for-small {
-        display: none;
-    }
-}
