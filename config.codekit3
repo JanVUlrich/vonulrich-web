@@ -74,6 +74,21 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/src\/css\/base\/_base-layout.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/base\/_base-layout.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 2,
+      "sct" : 0
+    },
     "\/src\/css\/base\/_base.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -87,7 +102,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/base\/_fonts.scss" : {
       "aP" : 1,
@@ -102,7 +117,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/base\/_normalize.scss" : {
       "aP" : 1,
@@ -117,7 +132,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/base\/_root.scss" : {
       "aP" : 1,
@@ -132,7 +147,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/base\/_tablet-rotation.scss" : {
       "aP" : 1,
@@ -147,7 +162,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/base\/_touchevents.scss" : {
       "aP" : 1,
@@ -162,22 +177,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
-    },
-    "\/src\/css\/components\/_body.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/components\/_body.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/components\/_components.scss" : {
       "aP" : 1,
@@ -192,22 +192,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
-    },
-    "\/src\/css\/components\/_grid.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/components\/_grid.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/config\/_colors.scss" : {
       "aP" : 1,
@@ -222,7 +207,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/config\/_config.scss" : {
       "aP" : 1,
@@ -237,7 +222,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/config\/_variables.scss" : {
       "aP" : 1,
@@ -252,7 +237,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/style.scss" : {
       "aP" : 1,
@@ -267,7 +252,22 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
+    },
+    "\/src\/css\/utilities\/_grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/utilities\/_grid.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 2,
+      "sct" : 0
     },
     "\/src\/css\/utilities\/_styling.scss" : {
       "aP" : 1,
@@ -282,7 +282,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/utilities\/_typography.scss" : {
       "aP" : 1,
@@ -297,7 +297,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/css\/utilities\/_utilities.scss" : {
       "aP" : 1,
@@ -312,7 +312,7 @@
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
-      "sct" : 1
+      "sct" : 0
     },
     "\/src\/favicon.ico" : {
       "cB" : 0,
@@ -453,6 +453,14 @@
       "oAP" : "\/dist\/parts\/_head.html",
       "oF" : 0
     },
+    "\/src\/parts\/_scripts.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_scripts.html",
+      "oF" : 0
+    },
     "\/src\/sitemap.xml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -474,7 +482,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 718057298.05525601
+    "lastBuiltDate" : 718561982.24719095
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1919,7 +1927,7 @@
       "autoOutputPathReplace1" : "sass",
       "autoOutputPathReplace2" : "css",
       "autoOutputPathStyle" : 0,
-      "compilerType" : 1,
+      "compilerType" : 0,
       "cssoStyle" : 0,
       "decimalPrecision" : 10,
       "emitCharset" : 1,
