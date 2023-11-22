@@ -71,6 +71,13 @@
 }
 
 
+img.scale-with-grid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 @mixin baseStyles {
     .c {
         &-accent {

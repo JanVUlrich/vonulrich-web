@@ -1,11 +1,13 @@
 <script>
+    // Workaround for iOS and Desktop Safari
+    // https://developer.apple.com/forums/thread/651215
+
     if (document.readyState !== 'loading') {
         run();
     } else {
         document.addEventListener('DOMContentLoaded', function () {
             run();
         });
-
     }
 
     function run() {
@@ -16,5 +18,4 @@
             el.addEventListener("click", _ => { window.location.href = part1 + part2 })
         })
     }
-
 </script>

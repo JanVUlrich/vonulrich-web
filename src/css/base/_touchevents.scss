@@ -2,6 +2,12 @@
 * eliminating the 300 ms delay on input elements for mobile (only modern browsers)
 */
 
-a, button, input, select, textarea, label, summary {
+a,
+button,
+input,
+select,
+textarea,
+label,
+summary {
   touch-action: manipulation;
 }

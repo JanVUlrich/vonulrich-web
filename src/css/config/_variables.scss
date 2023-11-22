@@ -1,3 +1,11 @@
+$breakpoints: ("sm": 768,
+    "md": 1024,
+    "lg": 1360,
+);
+
+// cycle over sass map to generate breakpoints
+// https://sass-lang.com/documentation/at-rules/control/each/
+
 $font-color-base: #4C3515;
 $font-color-accent: #648D6B;
 $font-color-highlight: #B82124;

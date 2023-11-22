@@ -1,0 +1,24 @@
+html {
+    font-size: calc(15px + (2* 0.390625vw));
+}
+
+body {
+    font-family: "Inconsolata", Helvetica, sans-serif;
+    color: var(--vu-text-primary);
+    padding-top: 2rem;
+    line-height: 1.6;
+    background-color: var(--vu-bg-main);
+    font-synthesis: none;
+}
+
+// Decorative line a the top of the page 
+
+body:before {
+    z-index: 100;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 8px solid var(--vu-text-accent);
+}
