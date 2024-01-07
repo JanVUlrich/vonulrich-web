@@ -17,12 +17,6 @@
       "oAP" : "\/dist\/.gitignore",
       "oF" : 0
     },
-    "\/dist" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/dist\/dist",
-      "oF" : 0
-    },
     "\/LICENSE.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -482,7 +476,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 718561982.24719095
+    "lastBuiltDate" : 722377463.29000902
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
