@@ -7,7 +7,7 @@
       "uuidString" : "D5AD878A-1168-40BB-AA2B-0F68EB3B5DCA"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -15,6 +15,12 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/dist\/.gitignore",
+      "oF" : 0
+    },
+    "\/dist" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/dist\/dist",
       "oF" : 0
     },
     "\/LICENSE.md" : {
@@ -78,21 +84,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/base\/_base-layout.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 2,
-      "sct" : 0
-    },
-    "\/src\/css\/base\/_base.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/base\/_base.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
@@ -173,7 +164,7 @@
       "pg" : 2,
       "sct" : 0
     },
-    "\/src\/css\/components\/_components.scss" : {
+    "\/src\/css\/base\/index.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -181,14 +172,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/components\/_components.css",
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/base\/index.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
       "sct" : 0
     },
-    "\/src\/css\/config\/_colors.scss" : {
+    "\/src\/css\/components\/index.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -196,14 +187,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/config\/_colors.css",
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/components\/index.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
       "sct" : 0
     },
-    "\/src\/css\/config\/_config.scss" : {
+    "\/src\/css\/config\/index.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -211,23 +202,8 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/config\/_config.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 2,
-      "sct" : 0
-    },
-    "\/src\/css\/config\/_variables.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/config\/_variables.css",
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/config\/index.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
@@ -293,7 +269,7 @@
       "pg" : 2,
       "sct" : 0
     },
-    "\/src\/css\/utilities\/_utilities.scss" : {
+    "\/src\/css\/utilities\/index.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -301,8 +277,8 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/utilities\/_utilities.css",
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/utilities\/index.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 2,
@@ -369,6 +345,54 @@
       "hM" : 0,
       "oA" : 2,
       "oAP" : "\/dist\/fonts\/inconsolata-regular.woff",
+      "oF" : 0
+    },
+    "\/src\/fonts\/PTSerif-Bold.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/PTSerif-Bold.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/PTSerif-BoldItalic.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/PTSerif-BoldItalic.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/PTSerif-Italic.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/PTSerif-Italic.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/PTSerif-Regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/PTSerif-Regular.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/WorkSans-Bold.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/WorkSans-Bold.ttf",
+      "oF" : 0
+    },
+    "\/src\/fonts\/WorkSans-ExtraBold.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/fonts\/WorkSans-ExtraBold.ttf",
       "oF" : 0
     },
     "\/src\/icon-192.png" : {
@@ -447,6 +471,14 @@
       "oAP" : "\/dist\/parts\/_head.html",
       "oF" : 0
     },
+    "\/src\/parts\/_logo.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_logo.html",
+      "oF" : 0
+    },
     "\/src\/parts\/_scripts.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -472,11 +504,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 523099198,
-    "displayValue" : "vu",
+    "displayValue" : "vonulrich-web",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 722377463.29000902
+    "lastBuiltDate" : 735506893.62046194
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1302,9 +1334,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -1316,6 +1345,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1

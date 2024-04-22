@@ -4,16 +4,16 @@ html {
 }
 
 body {
-    font-family: "Inconsolata", Helvetica, sans-serif;
+    font-family: "PT Serif", Georgia, serif;
     color: var(--vu-text-primary);
     padding-top: 2rem;
     line-height: 1.6;
-    background-color: var(--vu-bg-main);
+    background-color: var(--vu-bg-primary);
     font-synthesis: none;
+    text-wrap: pretty;
 }
 
 // Decorative line a the top of the page 
-
 body:before {
     z-index: 100;
     content: '';

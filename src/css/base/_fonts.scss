@@ -1,17 +1,24 @@
 @font-face {
-    font-family: 'Inconsolata';
+    font-family: 'PT Serif';
     font-weight: 400;
-    src: url('/fonts/inconsolata-regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('/fonts/inconsolata-regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
+    src: url('/fonts/PTSerif-Regular.ttf') format('truetype'),
 }
 
 @font-face {
-    font-family: 'Inconsolata';
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-style: italic;
+    src: url('/fonts/PTSerif-Italic.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'PT Serif';
     font-weight: 700;
-    src: url('/fonts/inconsolata-bold.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('/fonts/inconsolata-bold.ttf') format('truetype'),
-        /* Safari, Android, iOS */
+    src: url('/fonts/PTSerif-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    src: url('/fonts/WorkSans-Bold.ttf') format('truetype'),
 }

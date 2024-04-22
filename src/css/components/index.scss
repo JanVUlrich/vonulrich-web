@@ -1,33 +1,47 @@
-$breakpoint-sm: 600px;
+@use "../config/" as v;
+@use 'sass:math';
 
-.site-logo-title {
-    margin-top: 1rem;
-    padding-left: 4em;
-    padding-top: .75em;
-    padding-bottom: .75em;
-    background: transparent url('../img/me-head.svg') no-repeat center left;
-    background-size: contain;
-    color: var(--vu-text-accent);
-    line-height: 1.2;
+.site-header {
+    display: flex;
+    gap: v.$unit * 3;
+    align-items: center;
+}
+
+.logo-star {
+    flex: none;
+
+    path { fill: var(--vu-text-accent)}
+}
+
+.site-header-title {
+    display: flex;
+    gap: math.div(v.$unit, 2);
+    justify-content: center;
+    flex-direction: column;
 }
 
 .intro {
     margin-top: 4rem;
 
-    @media (min-width: $breakpoint-sm) {
+    @media (min-width: v.$breakpoint-sm) {
         margin-top: 6rem;
     }
 
     &__greeting,
     &__headline {
-        @media (min-width: $breakpoint-sm) {
+        @media (min-width: v.$breakpoint-sm) {
             font-size: 2.4rem;
         }
     }
 }
 
 
-.text__a {
+.callout {
+    font-family: "Work Sans";
+    font-weight: bold;
+}
+
+.text-link {
     text-decoration: none;
     line-height: 1;
     padding-bottom: 2px;
@@ -50,7 +64,7 @@ $breakpoint-sm: 600px;
     }
 
     &:hover {
-        color: white;
+        color: var(--vu-bg-primary);
 
         &:after {
             height: 1em;
