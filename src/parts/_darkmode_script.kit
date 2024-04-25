@@ -1,0 +1,10 @@
+<script>
+    const theme = localStorage.getItem('vu-theme');
+    const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    if (theme === null) {
+        localStorage.setItem('vu-theme', prefersDarkTheme ? 'dark' : 'light')
+    } else {
+        document.documentElement.dataset.theme = theme;
+    }
+</script>

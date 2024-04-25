@@ -3,7 +3,7 @@
 */
 
 
-:root {
+:root[data-theme="light"] {
     color-scheme: light;
 
     --vu-color-accent: hsl(145, 45%, 34%);
@@ -12,15 +12,18 @@
     --vu-text-accent: var(--vu-color-accent);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
+@mixin dark-theme {
+    color-scheme: dark;
 
-        --vu-color-accent: hsl(36, 100%, 83%);
-    
-        --vu-bg-primary: hsl(173, 11%, 16%);
-        --vu-text-primary: hsl(38, 23%, 91%);
-        --vu-text-accent: var(--vu-color-accent);
-    }   
+    --vu-color-accent: hsl(36, 100%, 83%);
+
+    --vu-bg-primary: hsl(173, 11%, 16%);
+    --vu-text-primary: hsl(38, 23%, 91%);
+    --vu-text-accent: var(--vu-color-accent);
 }
+
+:root[data-theme="dark"] {
+    @include dark-theme();
+}   
+
 

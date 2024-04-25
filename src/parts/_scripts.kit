@@ -17,5 +17,20 @@
         Array.from(document.querySelectorAll("[data-email]")).forEach(el => {
             el.addEventListener("click", _ => { window.location.href = part1 + part2 })
         })
+
+        const themeToggle = document.querySelector('#theme-toggle');
+        
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme)
+        }
+    }
+
+    function toggleTheme() {
+
+        const prevTheme = localStorage.getItem('vu-theme');
+        const nextTheme = prevTheme === 'light' ? "dark" : "light";
+
+        localStorage.setItem('vu-theme', nextTheme)
+        document.documentElement.dataset.theme = nextTheme;
     }
 </script>
