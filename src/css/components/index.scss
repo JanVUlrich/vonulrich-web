@@ -9,13 +9,12 @@
 
 .logo-star {
     flex: none;
-
     path { fill: var(--vu-text-accent)}
 }
 
 .site-header-title {
     display: flex;
-    gap: math.div(v.$unit, 2);
+    color: var(--vu-color-accent);
     justify-content: center;
     flex-direction: column;
 }
