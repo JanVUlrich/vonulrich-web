@@ -12,7 +12,7 @@ body {
     background-color: var(--vu-bg-primary);
     font-synthesis: none;
     text-wrap: pretty;
-    transition: all .75s;
+    transition: color .75s, background-color .75s;
 }
 
 // Decorative line a the top of the page 

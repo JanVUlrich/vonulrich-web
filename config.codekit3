@@ -86,7 +86,7 @@
       "oAP" : "\/dist\/css\/base\/_base-layout.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/_fonts.scss" : {
@@ -101,7 +101,7 @@
       "oAP" : "\/dist\/css\/base\/_fonts.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/_normalize.scss" : {
@@ -116,7 +116,7 @@
       "oAP" : "\/dist\/css\/base\/_normalize.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/_root.scss" : {
@@ -131,7 +131,7 @@
       "oAP" : "\/dist\/css\/base\/_root.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/_tablet-rotation.scss" : {
@@ -146,7 +146,7 @@
       "oAP" : "\/dist\/css\/base\/_tablet-rotation.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/_touchevents.scss" : {
@@ -161,7 +161,7 @@
       "oAP" : "\/dist\/css\/base\/_touchevents.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/base\/index.scss" : {
@@ -176,7 +176,7 @@
       "oAP" : "\/dist\/css\/base\/index.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/components\/index.scss" : {
@@ -191,7 +191,7 @@
       "oAP" : "\/dist\/css\/components\/index.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/config\/index.scss" : {
@@ -206,7 +206,7 @@
       "oAP" : "\/dist\/css\/config\/index.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/style.scss" : {
@@ -221,7 +221,7 @@
       "oAP" : "\/dist\/css\/style.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/utilities\/_grid.scss" : {
@@ -236,7 +236,7 @@
       "oAP" : "\/dist\/css\/utilities\/_grid.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/utilities\/_styling.scss" : {
@@ -251,7 +251,7 @@
       "oAP" : "\/dist\/css\/utilities\/_styling.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/utilities\/_typography.scss" : {
@@ -266,7 +266,7 @@
       "oAP" : "\/dist\/css\/utilities\/_typography.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/css\/utilities\/index.scss" : {
@@ -281,7 +281,7 @@
       "oAP" : "\/dist\/css\/utilities\/index.css",
       "oF" : 0,
       "oS" : 3,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/src\/favicon.ico" : {
@@ -455,6 +455,22 @@
       "oAP" : "\/dist\/manifest.webmanifest",
       "oF" : 0
     },
+    "\/src\/parts\/_darkmode_script.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_darkmode_script.html",
+      "oF" : 0
+    },
+    "\/src\/parts\/_darkmode_symbol.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_darkmode_symbol.html",
+      "oF" : 0
+    },
     "\/src\/parts\/_footer.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -508,7 +524,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 735749382.81735301
+    "lastBuiltDate" : 736110574.84203005
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -807,7 +823,7 @@
     "buildFolderName" : "dist",
     "cleanBuild" : 1,
     "cssoForceMediaMerge" : 0,
-    "cssoRestructure" : 1,
+    "cssoRestructure" : 0,
     "environmentVariableEntries" : [
       "NODE_ENV:::production"
     ],
@@ -1795,7 +1811,7 @@
       "autoOutputPathStyle" : 0,
       "combineImports" : 1,
       "cssoStyle" : 0,
-      "purgeCSSStyle" : 2,
+      "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 1,
       "shouldRunBless" : 0,
       "sourceMapStyle" : 0
@@ -1958,7 +1974,7 @@
       "decimalPrecision" : 10,
       "emitCharset" : 1,
       "outputStyle" : 3,
-      "purgeCSSStyle" : 2,
+      "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 1,
       "shouldRunBless" : 0,
       "sourceMapStyle" : 0

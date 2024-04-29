@@ -5,22 +5,23 @@
 <!-- @include parts/_head.kit -->
 
 <body>
-  <!-- @include parts/_darkmode_script.kit -->
 
   <main class="content-grid">
 
     <header class="site-header">
-      
       <!-- @include parts/logo.kit -->
-
+  
       <div class="site-header-title">
-        <strong><span class="fs-5">Jan Volkert Ulrich</span></strong>
-        <span class="callout fs-3">Designer &amp; Web Developer</span>
+        <span class="site-header-title-name fs-5">Jan Volkert Ulrich</span>
+        <span class="site-header-title-job callout fs-3">Designer &amp; Web Developer</span>
       </div>
-      <button class="d-block w-fit" id="theme-toggle">
-        O
+      <button class="d-block w-fit theme-toggle" id="theme-toggle" data-theme="dark">
+      <!-- @include parts/darkmode_symbol.kit -->
       </button>
+
     </header>
+
+    <!-- @include parts/_darkmode_script.kit -->
 
     <section class="intro mb-12 fl-normal ">
       <span class="fb c-accent fs-8 f-space-neg-1">
@@ -96,7 +97,5 @@
 </body>
 
 <!-- @include parts/_scripts.kit -->
-
-
 
 </html>
