@@ -2,8 +2,8 @@
 @use 'sass:math';
 
 :root[data-theme="light"] {
-    .site-header { 
-        --header-star-shape-fill: var(--vu-color-accent); 
+    .site-header {
+        --header-star-shape-fill: var(--vu-color-accent);
         --header-name-color: var(--vu-violet-dark);
         --header-job-color: var(--vu-violet-dark);
         --header-toggle-fill: ;
@@ -11,18 +11,19 @@
 }
 
 :root[data-theme="dark"] {
-    .site-header { 
+    .site-header {
         --header-star-shape-fill: var(--vu-color-accent);
         --header-name-color: var(--vu-yellow-light);
         --header-job-color: var(--vu-yellow-light);
-        --header-toggle-fill: var(--vu-color-accent);;
+        --header-toggle-fill: var(--vu-color-accent);
+        ;
     }
 }
 
 .site-header {
     display: flex;
     gap: v.$unit * 3;
-    
+
     @media (min-width: v.$breakpoint-sm) {
         align-items: center;
     }
@@ -83,13 +84,14 @@
         align-self: center;
     }
 
-    &:hover {
-        opacity: 1;
-    }
-
     >svg {
         width: clamp(30px, 1.5rem, 36px);
         height: clamp(30px, 1.5rem, 36px);
+
+        .sun,
+        .moon {
+            transition: transform .35s;
+        }
     }
 
     &[data-theme="light"] {
@@ -98,9 +100,10 @@
             transition-delay: .25s;
             fill: var(--vu-color-accent);
         }
+
         >svg .moon {
             transform: translateY(36px);
-            transition-delay: 0;
+            transition-delay: 0s;
             fill: var(--vu-color-accent);
         }
     }
@@ -108,13 +111,31 @@
     &[data-theme="dark"] {
         >svg .sun {
             transform: translateY(36px);
-            transition-delay: 0;
+            transition-delay: 0s;
             fill: var(--vu-color-accent);
         }
+
         >svg .moon {
             transform: translateY(0);
             transition-delay: .25s;
             fill: var(--vu-color-accent);
+        }
+    }
+}
+
+.no-touch {
+    .theme-toggle:hover {
+        opacity: 1;
+    }
+}
+
+.touch {
+    .theme-toggle {
+        transition-duration: 5s;
+        
+        &:active {
+            opacity: 1;
+            transition-duration: 0s;
         }
     }
 }
