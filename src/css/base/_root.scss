@@ -4,22 +4,36 @@
 
 
 :root {
-    --vu-green-mid: hsl(145, 45%, 34%);
-    --vu-green-dark: hsl(173, 11%, 16%);
+    --vu-red-mid: hsl(8, 85%, 60%);
+    --vu-red-dark: hsl(173, 11%, 16%);
     --vu-yellow-light:  hsl(38, 23%, 91%);
     --vu-yellow-mid:  hsl(36, 100%, 83%);
-    --vu-grey-light:  hsl(30, 100%, 97%);
-    --vu-grey-mid:  hsl(36, 12%, 25%);
+    --vu-violet-dark: hsl(283, 66%, 10%);
+
+    --vu-neutral-100: hsl(0, 0%, 0%);
+    --vu-neutral-80: hsl(0, 0%, 20%);
+    --vu-neutral-60: hsl(0, 0%, 40%);
+    --vu-neutral-40: hsl(0, 0%, 60%);
+    --vu-neutral-20: hsl(0, 0%, 80%);
+    --vu-neutral-0: hsl(0, 0%, 100%);
+
+    --vu-warmgrey-100: hsl(25, 10%, 20%); 
+    --vu-warmgrey-80: hsl(25, 20%, 40%);
+    --vu-warmgrey-60: hsl(25, 30%, 60%);
+    --vu-warmgrey-40: hsl(25, 40%, 80%);
+    --vu-warmgrey-20: hsl(25, 50%, 95%);
+    --vu-warmgrey-0: hsl(0, 0%, 100%);
 }
+
 
 
 :root[data-theme="light"] {
     color-scheme: light;
 
-    --vu-color-accent: var(--vu-green-mid);
+    --vu-color-accent: var(--vu-red-mid);
 
-    --vu-bg-primary: var(--vu-grey-light);
-    --vu-text-primary: var(--vu-grey-mid);
+    --vu-bg-primary: var(--vu-warmgrey-20);
+    --vu-text-primary: var(--vu-violet-dark);
     --vu-text-accent: var(--vu-color-accent);
 }
 
@@ -28,7 +42,7 @@
 
     --vu-color-accent: var(--vu-yellow-mid);
 
-    --vu-bg-primary: var(--vu-green-dark);
+    --vu-bg-primary: var(--vu-violet-dark);
     --vu-text-primary:  var(--vu-yellow-light);
     --vu-text-accent: var(--vu-color-accent);
 }

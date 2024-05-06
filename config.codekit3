@@ -471,6 +471,14 @@
       "oAP" : "\/dist\/parts\/_darkmode_symbol.html",
       "oF" : 0
     },
+    "\/src\/parts\/_darkmode_toggle_script.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/parts\/_darkmode_toggle_script.html",
+      "oF" : 0
+    },
     "\/src\/parts\/_footer.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -524,7 +532,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "\/src\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 736110574.84203005
+    "lastBuiltDate" : 736110841.55263996
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
