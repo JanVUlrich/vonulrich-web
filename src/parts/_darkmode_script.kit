@@ -1,12 +1,14 @@
 <script>
     const theme = localStorage.getItem('vu-theme');
-    const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const toggle = document.querySelector('#theme-toggle');
+    
+    if (!theme) {
+        const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const newTheme = prefersDarkTheme ? 'dark' : 'light';
 
-    if (theme === null) {
-        localStorage.setItem('vu-theme', prefersDarkTheme ? 'dark' : 'light')
+        localStorage.setItem('vu-theme', newTheme);
+        document.documentElement.dataset.theme = newTheme;
+
     } else {
         document.documentElement.dataset.theme = theme;
-        if (toggle) toggle.dataset.theme = theme;
     }
 </script>
