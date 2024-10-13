@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-
-<!-- $title = Jan Volkert Ulrich | UI | UX | Design Solutions -->
-<!-- @include parts/_head.kit -->
+{{> htmlhead }}
 
 <body>
 
-  <!-- @include parts/_darkmode_script.kit -->
+  {{> darkmode_script }}
 
   <main class="content-grid">
 
     <header class="site-header">
-      <!-- @include parts/logo.kit -->
-  
+      {{> logo }}
       <div class="site-header-title">
         <span class="site-header-title-name fs-5">Jan Volkert Ulrich</span>
         <span class="site-header-title-job callout fs-3">Designer &amp; Web Developer</span>
       </div>
       <button class="d-block w-fit theme-toggle" id="theme-toggle" data-theme="dark">
-      <!-- @include parts/darkmode_symbol.kit -->
+        {{> darkmode_symbol }}
       </button>
 
     </header>
 
-    <!-- @include parts/_darkmode_toggle_script.kit -->
+    {{> darkmode_toggle_script }}
 
     <section class="intro mb-12 fl-normal ">
       <span class="fb c-accent fs-8 f-space-neg-1">
         Hi there, nice to meet you!
       </span><br />
       <h1 class="fb c-accent mb-12 mt-0 fs-8 f-space-neg-1">
-        I am Jan Volkert Ulrich, designer for websites, apps, brands and digital concepts. And some web development, too!
+        I am Jan Volkert Ulrich, designer for websites, apps, brands and digital concepts. And some web development,
+        too!
       </h1>
     </section>
 
     <section class="mb-4">
       <h2 class="c-accent fb f-up f-space-4 mb-4">About me</h2>
-           <p>I am currently employed at <a class="text-link" title="Wind and weather forecasts at windfinder.com"
+      <p>I am currently employed at <a class="text-link" title="Wind and weather forecasts at windfinder.com"
           href="https://www.windfinder.com">Windfinder.com</a>, where I am responsible for all visual design for web,
         apps and marketing materials, as well as building and improving products across web and native platforms.</p>
       <p> With 13 years of industry experience, i've worked with a multitude of clients from various industries and
         backgrounds. Among these: <br class="visible-xs" />
         <a class="text-link" href="http://www.stuffle.it">Stuffle</a>, <a class="text-link"
-          href="http://www.contentful.com">Contentful</a>, <a class="text-link" href="http://www.paleoconvention.de">Paleo
-          Convention</a>, <a class="text-link" href="http://www.primalstate.com">Primal State</a> and <a class="text-link"
-          href="https://www.institutofeldenkrais.com">Instituto Feldenkrais</a>.
+          href="http://www.contentful.com">Contentful</a>, <a class="text-link"
+          href="http://www.paleoconvention.de">Paleo
+          Convention</a>, <a class="text-link" href="http://www.primalstate.com">Primal State</a> and <a
+          class="text-link" href="https://www.institutofeldenkrais.com">Instituto Feldenkrais</a>.
       </p>
     </section>
 
@@ -94,10 +93,10 @@
 
   </main>
 
-  <!-- @include parts/_footer.kit -->
+  {{> footer }}
 
 </body>
 
-<!-- @include parts/_scripts.kit -->
+{{> scripts }}
 
 </html>
