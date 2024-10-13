@@ -4,8 +4,11 @@
 
 
 :root {
-    --vu-red-mid: hsl(8, 85%, 60%);
+    --vu-green-mid: hsl(145, 45%, 34%);
+    --vu-green-dark: hsl(173, 11%, 16%);
     
+    --vu-red-mid: hsl(8, 85%, 60%);
+
     --vu-yellow-light:  hsl(36, 100%, 95%);
     --vu-yellow-mid:  hsl(36, 100%, 83%);
     
@@ -31,10 +34,12 @@
 :root[data-theme="light"] {
     color-scheme: light;
 
-    --vu-color-accent: var(--vu-red-mid);
+    --vu-color-accent: var(--vu-green-mid);
 
     --vu-bg-primary: var(--vu-warmgrey-20);
-    --vu-text-primary: var(--vu-violet-dark);
+
+    --vu-text-primary: var(--vu-warmgrey-80);
+    
     --vu-text-accent: var(--vu-color-accent);
 }
 
@@ -43,8 +48,10 @@
 
     --vu-color-accent: var(--vu-yellow-mid);
 
-    --vu-bg-primary: var(--vu-violet-dark);
+    --vu-bg-primary: var(--vu-green-dark);
+
     --vu-text-primary:  var(--vu-yellow-light);
+
     --vu-text-accent: var(--vu-color-accent);
 }
 

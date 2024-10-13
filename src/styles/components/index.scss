@@ -4,8 +4,8 @@
 :root[data-theme="light"] {
     .site-header {
         --header-star-shape-fill: var(--vu-color-accent);
-        --header-name-color: var(--vu-violet-dark);
-        --header-job-color: var(--vu-violet-dark);
+        --header-name-color: var(--vu-text-primary);
+        --header-job-color: var(--vu-text-primary);
         --header-toggle-fill: ;
     }
 }
