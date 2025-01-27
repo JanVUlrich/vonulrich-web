@@ -1,9 +1,10 @@
+@use './toggle.scss';
 @use "../config/" as v;
 @use 'sass:math';
 
 :root[data-theme="light"] {
     .site-header {
-        --header-star-shape-fill: var(--vu-color-accent);
+        --header-star-shape-fill: var(--vu-clr-accent);
         --header-name-color: var(--vu-text-primary);
         --header-job-color: var(--vu-text-primary);
         --header-toggle-fill: ;
@@ -12,10 +13,10 @@
 
 :root[data-theme="dark"] {
     .site-header {
-        --header-star-shape-fill: var(--vu-color-accent);
-        --header-name-color: var(--vu-yellow-light);
-        --header-job-color: var(--vu-yellow-light);
-        --header-toggle-fill: var(--vu-color-accent);
+        --header-star-shape-fill: var(--vu-clr-accent);
+        --header-name-color: var(--vu-yellow-050);
+        --header-job-color: var(--vu-yellow-050);
+        --header-toggle-fill: var(--vu-clr-accent);
         ;
     }
 }
@@ -45,8 +46,6 @@
 }
 
 
-
-
 .site-header-title {
     display: flex;
     justify-content: center;
@@ -72,8 +71,6 @@
     display: flex;
     margin-left: auto;
     cursor: pointer;
-    opacity: .5;
-    transition: opacity .35s;
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
 
@@ -83,6 +80,7 @@
     @media (min-width: v.$breakpoint-sm) {
         align-self: center;
     }
+
 
     >svg {
         width: clamp(30px, 1.5rem, 36px);
@@ -98,13 +96,13 @@
         >svg .sun {
             transform: translateY(0);
             transition-delay: .25s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
 
         >svg .moon {
             transform: translateY(36px);
             transition-delay: 0s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
     }
 
@@ -112,13 +110,13 @@
         >svg .sun {
             transform: translateY(36px);
             transition-delay: 0s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
 
         >svg .moon {
             transform: translateY(0);
             transition-delay: .25s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
     }
 }
@@ -142,7 +140,6 @@
 
 
 .callout {
-    font-family: "Work Sans";
     font-weight: bold;
 }
 

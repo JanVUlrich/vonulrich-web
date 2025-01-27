@@ -4,8 +4,7 @@ html {
 }
 
 body {
-    // font-family: "Source Serif", Georgia, serif;
-    font-family: "PT Serif", Georgia, serif;
+    font-family: "Comissioner", Georgia, serif;
     color: var(--vu-text-primary);
     padding-top: 2rem;
     line-height: 1.6;
@@ -13,15 +12,4 @@ body {
     font-synthesis: none;
     text-wrap: pretty;
     transition: color .75s, background-color .75s;
-}
-
-// Decorative line a the top of the page 
-body:before {
-    z-index: 100;
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 8px solid var(--vu-text-accent);
 }
