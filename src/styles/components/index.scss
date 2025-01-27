@@ -3,7 +3,7 @@
 
 :root[data-theme="light"] {
     .site-header {
-        --header-star-shape-fill: var(--vu-color-accent);
+        --header-star-shape-fill: var(--vu-clr-accent);
         --header-name-color: var(--vu-text-primary);
         --header-job-color: var(--vu-text-primary);
         --header-toggle-fill: ;
@@ -12,10 +12,10 @@
 
 :root[data-theme="dark"] {
     .site-header {
-        --header-star-shape-fill: var(--vu-color-accent);
+        --header-star-shape-fill: var(--vu-clr-accent);
         --header-name-color: var(--vu-yellow-light);
         --header-job-color: var(--vu-yellow-light);
-        --header-toggle-fill: var(--vu-color-accent);
+        --header-toggle-fill: var(--vu-clr-accent);
         ;
     }
 }
@@ -98,13 +98,13 @@
         >svg .sun {
             transform: translateY(0);
             transition-delay: .25s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
 
         >svg .moon {
             transform: translateY(36px);
             transition-delay: 0s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
     }
 
@@ -112,13 +112,13 @@
         >svg .sun {
             transform: translateY(36px);
             transition-delay: 0s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
 
         >svg .moon {
             transform: translateY(0);
             transition-delay: .25s;
-            fill: var(--vu-color-accent);
+            fill: var(--vu-clr-accent);
         }
     }
 }
@@ -142,7 +142,7 @@
 
 
 .callout {
-    font-family: "Work Sans";
+    font-family: var(--vu-fontstack-sans);
     font-weight: bold;
 }
 

@@ -7,26 +7,18 @@
     --vu-green-mid: hsl(145, 45%, 34%);
     --vu-green-dark: hsl(173, 11%, 16%);
     
-    --vu-red-mid: hsl(8, 85%, 60%);
-
     --vu-yellow-light:  hsl(36, 100%, 95%);
     --vu-yellow-mid:  hsl(36, 100%, 83%);
     
-    --vu-violet-dark: hsl(283, 66%, 10%);
-
-    --vu-neutral-100: hsl(0, 0%, 0%);
-    --vu-neutral-80: hsl(0, 0%, 20%);
-    --vu-neutral-60: hsl(0, 0%, 40%);
-    --vu-neutral-40: hsl(0, 0%, 60%);
-    --vu-neutral-20: hsl(0, 0%, 80%);
-    --vu-neutral-0: hsl(0, 0%, 100%);
-
     --vu-warmgrey-100: hsl(25, 10%, 20%); 
     --vu-warmgrey-80: hsl(25, 20%, 40%);
     --vu-warmgrey-60: hsl(25, 30%, 60%);
     --vu-warmgrey-40: hsl(25, 40%, 80%);
     --vu-warmgrey-20: hsl(25, 50%, 95%);
     --vu-warmgrey-0: hsl(0, 0%, 100%);
+
+    --vu-fontstack-serif: "PT Serif", Georgia, serif;
+    --vu-fontstack-sans: "Work Sans", Helvetica, Arial, sans-serif; 
 }
 
 
@@ -34,25 +26,19 @@
 :root[data-theme="light"] {
     color-scheme: light;
 
-    --vu-color-accent: var(--vu-green-mid);
-
+    --vu-clr-accent: var(--vu-green-mid);
     --vu-bg-primary: var(--vu-warmgrey-20);
-
     --vu-text-primary: var(--vu-warmgrey-80);
-    
-    --vu-text-accent: var(--vu-color-accent);
+    --vu-text-accent: var(--vu-clr-accent);
 }
 
 @mixin dark-theme {
     color-scheme: dark;
 
-    --vu-color-accent: var(--vu-yellow-mid);
-
+    --vu-clr-accent: var(--vu-yellow-mid);
     --vu-bg-primary: var(--vu-green-dark);
-
     --vu-text-primary:  var(--vu-yellow-light);
-
-    --vu-text-accent: var(--vu-color-accent);
+    --vu-text-accent: var(--vu-clr-accent);
 }
 
 :root[data-theme="dark"] {
