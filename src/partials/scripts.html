@@ -13,20 +13,24 @@
     function run() {
         const part1 = "mailto:"
         const part2 = "%6A%61%6E%76%2E%75%6C%72%69%63%68%40%67%6D%61%69%6C%2E%63%6F%6D"
+        const toggle = document.querySelector('#theme-toggle');
 
         Array.from(document.querySelectorAll("[data-email]")).forEach(el => {
             el.addEventListener("click", _ => { window.location.href = part1 + part2 })
         })
-        
-        if (toggle) { toggle.addEventListener('click', toggleTheme) }
+
+        if (toggle) { toggle.addEventListener('click', onThemeToggleClicked) }
     }
 
-    function toggleTheme() {
+
+    function onThemeToggleClicked() {
         const prevTheme = localStorage.getItem('vu-theme');
         const nextTheme = prevTheme === 'light' ? "dark" : "light";
+        const toggle = document.querySelector('#theme-toggle');
 
         localStorage.setItem('vu-theme', nextTheme)
         document.documentElement.dataset.theme = nextTheme;
-        toggle.dataset.theme = nextTheme;
+        toggle.classList.remove(prevTheme);
+        toggle.classList.add(nextTheme);
     }
 </script>

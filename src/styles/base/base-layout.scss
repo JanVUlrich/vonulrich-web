@@ -1,0 +1,15 @@
+html {
+    // https://matthewjamestaylor.com/responsive-font-size
+    font-size: calc(15px + (2 * 0.390625vw));
+}
+
+body {
+    background-color: var(--vu-bg-primary);
+    color: var(--vu-text-primary);
+    font-family: var(--vu-fontstack-serif);
+    font-synthesis: none;
+    line-height: 1.6;
+    padding-top: 2rem;
+    text-wrap: pretty;
+    transition: color .75s, background-color .75s;
+}
