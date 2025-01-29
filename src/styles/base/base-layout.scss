@@ -4,12 +4,12 @@ html {
 }
 
 body {
-    font-family: "Comissioner", Georgia, serif;
-    color: var(--vu-text-primary);
-    padding-top: 2rem;
-    line-height: 1.6;
     background-color: var(--vu-bg-primary);
+    color: var(--vu-text-primary);
+    font-family: var(--vu-fontstack-sans);
     font-synthesis: none;
+    line-height: 1.6;
+    padding-top: 2rem;
     text-wrap: pretty;
     transition: color .75s, background-color .75s;
 }

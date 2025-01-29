@@ -1,0 +1,100 @@
+$duration-default: .5s;
+$direction: normal;
+$spring-out: cubic-bezier(0.39, 0.575, 0.565, 1);
+$spring-in: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+.theme-toggle-icon {
+    display: block;
+    width: clamp(30px, 4vw, 48px);
+    height: clamp(30px, 4vw, 48px);
+
+    circle,
+    ellipse,
+    path,
+    rect,
+    g {
+        transition: fill .75s;
+    }
+}
+
+.dark {
+    .disc {
+        transform: translate(64px, 64px) scale(1, 1);
+        transition: all .66s $spring-out;
+    }
+
+    .occlusion {
+        transform: translate(87px, 41px);
+        transition: transform .66s $spring-out;
+    }
+
+    .ray-group {
+        opacity: 0;
+        transition: opacity .25s $spring-out;
+    }
+
+    .ray-top {
+        transform: translate(64px, 55.44px);
+        transition: transform .5s $spring-out;
+    }
+
+    .ray-bottom {
+        transform: translate(64px, 72.55px);
+        transition: transform .5s $spring-out;
+    }
+
+    .star-1 {
+        transform: translate(74px, 30px);
+        opacity: 1;
+        transition: transform .33s $spring-out .33s, opacity .33s $spring-out .25s;
+
+    }
+
+    .star-2 {
+        transform: translate(97px, 46.9px);
+        opacity: 1;
+        transition: transform .33s $spring-out .5s, opacity .33s $spring-out .25s;
+
+    }
+}
+
+.light {
+
+    .disc {
+        transform: translate(64px, 64px) scale(0.6, 0.6);
+        transition: all .66s $spring-out .33;
+    }
+
+    .occlusion {
+        transform: translate(118px, 14.5px);
+        transition: transform .66s $spring-out;
+    }
+
+    .ray-group {
+        opacity: 1;
+        transition: opacity .25s $spring-out .5s;
+    }
+
+    .ray-top {
+        transform: translate(64px, 24.23px);
+        transition: transform .25s $spring-out .5s;
+    }
+
+    .ray-bottom {
+        transform: translate(64px, 104px);
+        transition: transform .25s $spring-out .5s;
+    }
+
+    .star-1 {
+        opacity: 0;
+        transform: translate(58px, 72px);
+        transition: transform .33s $spring-out, opacity .33s $spring-out;
+    }
+
+    .star-2 {
+        opacity: 0;
+        transform: translate(58px, 72px);
+        transition: transform .33s $spring-out, opacity .33s $spring-out;
+    }
+
+}

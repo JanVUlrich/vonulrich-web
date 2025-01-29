@@ -3,7 +3,7 @@
 */
 
 
-:root {    
+:root {
     --vu-lilac-50: #f5f6f9;
     --vu-lilac-100: #e7eaf2;
     --vu-lilac-200: #d5dae8;
@@ -21,14 +21,15 @@
     --vu-greige-100: #F4F1DE;
     --vu-greige-200: #F2CC8F;
 
-    --vu-yellow-050:  hsl(36, 100%, 95%);
-    --vu-yellow-200:  hsl(36, 100%, 83%);
-    
+    --vu-yellow-050: hsl(36, 100%, 95%);
+    --vu-yellow-200: hsl(36, 100%, 83%);
+
     --vu-neutral-0: hsl(0, 0%, 100%);
     --vu-neutral-100: hsl(0, 0%, 0%);
+
+    --vu-fontstack-sans: "Comissioner", Arial, Helvetica, sans-serif;
 }
 
- 
 
 :root:not([data-theme="dark"]) {
     color-scheme: light;
@@ -54,6 +55,4 @@
 
 :root[data-theme="dark"] {
     @include dark-theme();
-}   
-
-
+}
