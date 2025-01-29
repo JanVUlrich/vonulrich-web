@@ -1,16 +1,6 @@
-.content-grid {
-    --padding-inline: 1rem;
-    --content-max-width: 60ch;
-
-    display: grid;
-    grid-template-columns:
-        [fullwidth-start] 1fr [content-start] min((100% - var(--padding-inline)*2), var(--content-max-width)) [content-end] 1fr [fullwidth-end];
-}
-
-.content-grid>* {
-    grid-column: content;
-}
-
+/*
+    Utility styles: grid
+*/
 
 .grid-cols-none {
     grid-template-columns: none;

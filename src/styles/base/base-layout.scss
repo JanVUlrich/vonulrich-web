@@ -1,3 +1,7 @@
+/*
+    Global styling 
+*/
+
 html {
     // https://matthewjamestaylor.com/responsive-font-size
     font-size: calc(15px + (2 * 0.390625vw));
@@ -12,4 +16,17 @@ body {
     padding-top: 2rem;
     text-wrap: pretty;
     transition: color .75s, background-color .75s;
+}
+
+.content-grid {
+    --padding-inline: 1rem;
+    --content-max-width: 60ch;
+
+    display: grid;
+    grid-template-columns:
+        [fullwidth-start] 1fr [content-start] min((100% - var(--padding-inline)*2), var(--content-max-width)) [content-end] 1fr [fullwidth-end];
+}
+
+.content-grid>* {
+    grid-column: content;
 }

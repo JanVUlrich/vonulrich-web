@@ -1,95 +1,22 @@
 @use "../config/" as v;
-@use 'sass:math';
 
+/*
+    Styles for start page
+*/
 
-.site-header {
-    --header-job-color: var(--vu-text-primary);
-    --header-name-color: var(--vu-text-primary);
-    --header-star-shape-fill: var(--vu-clr-accent);
-}
-
-
-.site-header {
-    display: flex;
-    gap: v.$unit * 3;
+.intro {
+    margin-top: 4rem;
 
     @media (min-width: v.$breakpoint-sm) {
-        align-items: center;
+        margin-top: 6rem;
     }
-}
 
-.logo-star {
-    display: none;
-
-    @media (min-width: v.$breakpoint-sm) {
-        height: auto;
-        width: 76px;
-        flex: none;
-        display: block;
-
-        path {
-            fill: var(--header-star-shape-fill)
+    &__greeting,
+    &__headline {
+        @media (min-width: v.$breakpoint-sm) {
+            font-size: 2.4rem;
         }
     }
-}
-
-
-
-
-.site-header-title {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .site-header-title-name {
-        line-height: 1.6rem;
-        font-weight: bold;
-        margin-bottom: .1rem;
-        color: var(--header-name-color);
-    }
-
-    .site-header-title-job {
-        line-height: 1.2rem;
-        font-weight: bold;
-        color: var(--header-job-color);
-    }
-}
-
-
-.theme-toggle {
-    all: unset;
-    display: flex;
-    margin-left: auto;
-    cursor: pointer;
-    border-radius: 50%;
-    -webkit-tap-highlight-color: transparent;
-
-    @media (min-width: v.$breakpoint-sm) {
-        align-self: center;
-    }
-}
-
-.no-touch {
-    .theme-toggle:hover {
-        opacity: 1;
-    }
-}
-
-.touch {
-    .theme-toggle {
-        transition-duration: 5s;
-
-        &:active {
-            opacity: 1;
-            transition-duration: 0s;
-        }
-    }
-}
-
-
-.callout {
-    font-family: var(--vu-fontstack-sans);
-    font-weight: bold;
 }
 
 
@@ -125,26 +52,11 @@
     }
 }
 
-a[data-email] {
-    cursor: pointer;
-}
-
-p.kontakt b {
+// Visually hide elements inserted by email obfuscation
+p.contact b {
     display: none;
 }
 
-
-.intro {
-    margin-top: 4rem;
-
-    @media (min-width: v.$breakpoint-sm) {
-        margin-top: 6rem;
-    }
-
-    &__greeting,
-    &__headline {
-        @media (min-width: v.$breakpoint-sm) {
-            font-size: 2.4rem;
-        }
-    }
+a[data-email] {
+    cursor: pointer;
 }
