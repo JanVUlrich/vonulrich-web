@@ -25,6 +25,8 @@ $spring-in: cubic-bezier(0.47, 0, 0.745, 0.715);
 .touch {
     .theme-toggle {
         transform: rotate(0deg) scale(1);
+        // "Wobbling" transition
+        // Source: https://pqina.nl/blog/css-spring-animation-with-linear-easing-function/
         transition: transform .5s linear(0.00, 0.0661, 0.636, 1.08, 1.22, 1.15, 1.03, 0.967, 0.959, 0.980, 1.00, 1.01, 1.01, 1.00, 0.999, 1.00);
 
         &:hover {
