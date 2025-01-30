@@ -1,0 +1,54 @@
+@use "../config/" as v;
+
+/*
+    Styles for site header: Name, icon, switch, contact
+*/
+
+.site-header {
+    --header-job-color: var(--vu-text-primary);
+    --header-name-color: var(--vu-text-primary);
+    --header-star-shape-fill: var(--vu-clr-accent);
+}
+
+.site-header {
+    display: flex;
+    gap: v.$unit * 3;
+
+    @media (min-width: v.$breakpoint-sm) {
+        align-items: center;
+    }
+}
+
+.logo-star {
+    display: none;
+
+    @media (min-width: v.$breakpoint-sm) {
+        height: auto;
+        width: 76px;
+        flex: none;
+        display: block;
+
+        path {
+            fill: var(--header-star-shape-fill)
+        }
+    }
+}
+
+.site-header-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .site-header-title-name {
+        line-height: 1.6rem;
+        font-weight: bold;
+        margin-bottom: .1rem;
+        color: var(--header-name-color);
+    }
+
+    .site-header-title-job {
+        line-height: 1.2rem;
+        font-weight: bold;
+        color: var(--header-job-color);
+    }
+}
