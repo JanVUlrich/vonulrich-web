@@ -13,6 +13,7 @@ $spring-in: cubic-bezier(0.47, 0, 0.745, 0.715);
     all: unset;
     display: flex;
     margin-left: auto;
+    margin-right: .5rem;
     cursor: pointer;
     border-radius: 50%;
     -webkit-tap-highlight-color: transparent;
@@ -37,8 +38,8 @@ $spring-in: cubic-bezier(0.47, 0, 0.745, 0.715);
 
 .theme-toggle-icon {
     display: block;
-    width: clamp(30px, 4vw, 48px);
-    height: clamp(30px, 4vw, 48px);
+    width: clamp(42px, 4vw, 48px);
+    height: clamp(42px, 4vw, 48px);
 
     circle,
     ellipse,

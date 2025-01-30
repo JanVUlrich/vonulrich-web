@@ -2,127 +2,64 @@
     Utility styles: grid
 */
 
+$increments: 1, 2, 3, 4;
+
 .grid-cols-none {
     grid-template-columns: none;
 }
 
-.grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+@each $count in $increments {
+    .grid-cols-#{$count} {
+        grid-template-columns: repeat($count, minmax(0, 1fr));
+    }
 }
 
-.grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+$bp: md;
 
-.grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-
-.md\. {
+.#{$bp}\. {
     &grid-cols-none {
         grid-template-columns: none;
     }
+}
 
-    &grid-cols-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-
-    &grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    &grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    &grid-cols-4 {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+@each $count in $increments {
+    .#{$bp}\.grid-cols-#{$count} {
+        grid-template-columns: repeat($count, minmax(0, 1fr));
     }
 }
 
-.lg\. {
+$bp: lg;
+
+.#{$bp}\. {
     &grid-cols-none {
         grid-template-columns: none;
     }
+}
 
-    &grid-cols-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-
-    &grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    &grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    &grid-cols-4 {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+@each $count in $increments {
+    .#{$bp}\.grid-cols-#{$count} {
+        grid-template-columns: repeat($count, minmax(0, 1fr));
     }
 }
 
-
-.col-1 {
-    grid-column: span 1/span 1;
+@each $count in $increments {
+    .#{$bp}\.col-#{$count} {
+        grid-column: span #{$count}/span #{$count};
+    }
 }
 
-.col-2 {
-    grid-column: span 2/span 2;
+@each $count in $increments {
+    .col-start-#{$count} {
+        grid-column-start: $count;
+    }
 }
-
-.col-3 {
-    grid-column: span 3/span 3;
-}
-
-.col-4 {
-    grid-column: span 4/span 4;
-}
-
-
-.col-start-1 {
-    grid-column-start: 1;
-}
-
-.col-start-2 {
-    grid-column-start: 2;
-}
-
-.col-start-3 {
-    grid-column-start: 3;
-}
-
-.col-start-4 {
-    grid-column-start: 4;
-}
-
-
 
 .grid-rows-none {
     grid-template-rows: none;
 }
 
-.grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-5 {
-    grid-template-rows: repeat(5, minmax(0, 1fr));
+@each $count in $increments {
+    .grid-rows-#{$count} {
+        grid-template-columns: repeat($count, minmax(0, 1fr));
+    }
 }

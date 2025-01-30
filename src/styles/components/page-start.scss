@@ -51,12 +51,3 @@
         }
     }
 }
-
-// Visually hide elements inserted by email obfuscation
-p.contact b {
-    display: none;
-}
-
-a[data-email] {
-    cursor: pointer;
-}
