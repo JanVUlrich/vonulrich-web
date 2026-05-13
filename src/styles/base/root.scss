@@ -9,6 +9,7 @@
     --vu-lilac-300: #b8c2d8;
     --vu-lilac-400: #95a3c5;
     --vu-lilac-500: #7c89b5;
+
     --vu-lilac-600: #6a73a6;
     --vu-lilac-700: #5e6497;
     --vu-lilac-800: #50547d;
@@ -16,6 +17,8 @@
     --vu-lilac-950: #2c2d3f;
 
     --vu-macchiato-500: #E07A5F;
+
+    --vu-brightorange-500: hsl(25, 100%, 65%);
 
     --vu-greige-100: #F4F1DE;
     --vu-greige-200: #F2CC8F;
@@ -44,10 +47,10 @@
 @mixin dark-theme {
     color-scheme: dark;
 
-    --vu-clr-accent: var(--vu-macchiato-500);
+    --vu-clr-accent: var(--vu-brightorange-500);
     --vu-bg-primary: var(--vu-lilac-900);
     --vu-surface-primary: var(--vu-greige-100);
-    --vu-text-accent: var(--vu-macchiato-500);
+    --vu-text-accent: var(--vu-brightorange-500);
     --vu-text-primary: var(--vu-greige-100);
     --vu-icon-primary: var(--vu-greige-100);
 }
