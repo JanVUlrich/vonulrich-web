@@ -1,0 +1,14 @@
+---
+import DarkmodeSymbolAnimated from './DarkmodeSymbolAnimated.astro';
+---
+
+<button class="block w-fit theme-toggle" id="theme-toggle">
+    <DarkmodeSymbolAnimated />
+</button>
+
+<script is:inline>
+    const toggle = document.querySelector('#theme-toggle');
+    const activeTheme = document.documentElement.dataset.theme;
+
+    if (toggle && activeTheme) toggle.classList.add(activeTheme);
+</script>
