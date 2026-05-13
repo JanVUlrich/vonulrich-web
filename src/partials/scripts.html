@@ -24,13 +24,15 @@
 
 
     function onThemeToggleClicked() {
-        const prevTheme = localStorage.getItem('vu-theme');
+        const prevTheme = document.documentElement.dataset.theme;
         const nextTheme = prevTheme === 'light' ? "dark" : "light";
         const toggle = document.querySelector('#theme-toggle');
 
         localStorage.setItem('vu-theme', nextTheme)
         document.documentElement.dataset.theme = nextTheme;
-        toggle.classList.remove(prevTheme);
+        if (prevTheme) {
+            toggle.classList.remove(prevTheme)
+        };
         toggle.classList.add(nextTheme);
     }
 </script>
