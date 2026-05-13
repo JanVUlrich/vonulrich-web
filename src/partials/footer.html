@@ -9,7 +9,11 @@
         </a>
 
         <div class="fs-3 fl-nospace">
-            &copy; 2025
+            &copy; <span data-current-year>2026</span>
         </div>
     </div>
 </footer>
+
+<script>
+    document.querySelector('[data-current-year]').textContent = new Date().getFullYear();
+</script>
