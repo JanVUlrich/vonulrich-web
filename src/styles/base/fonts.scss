@@ -1,17 +1,23 @@
 @font-face {
-    font-family: 'Comissioner';
+    font-family: "Commissioner";
+    font-style: normal;
     font-weight: 400;
-    src: url('/fonts/Commissioner-Regular.ttf') format('truetype'),
+    font-display: swap;
+    src: url("/fonts/Commissioner-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Comissioner';
+    font-family: "Commissioner";
+    font-style: normal;
     font-weight: 700;
-    src: url('/fonts/Commissioner-Bold.ttf') format('truetype'),
+    font-display: swap;
+    src: url("/fonts/Commissioner-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Comissioner';
+    font-family: "Commissioner";
+    font-style: normal;
     font-weight: 900;
-    src: url('/fonts/Commissioner-Black.ttf') format('truetype'),
+    font-display: swap;
+    src: url("/fonts/Commissioner-Black.ttf") format("truetype");
 }
