@@ -1,6 +1,15 @@
 ---
+import Footer from "../components/static/Footer.astro";
 import "../styles/style.scss";
-import Footer from "../components/Footer.astro";
+
+export interface Props {
+  readonly title: string;
+  readonly description: string;
+  readonly canonical: string;
+  readonly bodyPage: string;
+  readonly showFooter?: boolean;
+  readonly lang: "en" | "de";
+}
 
 export interface Props {
   readonly title: string;

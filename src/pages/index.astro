@@ -1,6 +1,7 @@
 ---
-import Logo from "../components/Logo.astro";
-import ThemeToggle from "../components/ThemeToggle.astro";
+import Calendar from "../components/client/Calendar/Calendar.svelte";
+import Logo from "../components/static/Logo.astro";
+import ThemeToggle from "../components/static/ThemeToggle.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -26,6 +27,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         I am Jan Volkert Ulrich, designer for websites, apps, brands and digital
         concepts. And some web development, too!
       </h1>
+      <Calendar client:only="svelte" />
     </section>
 
     <section class="mb-4">
